@@ -1,0 +1,24 @@
+{
+  "name": "re-color-contrast",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "pretest": "yarn run build",
+    "test": "jest"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "mikaello",
+  "description": "Fast, small color manipulation and conversion",
+  "homepage": "https://github.com/mikaello/bs-tinycolor",
+  "repository": "https://github.com/mikaello/bs-tinycolor",
+  "bugs": "https://github.com/mikaello/bs-tinycolor/issues",
+  "license": "MIT",
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.8",
+    "bs-platform": "^5.0.0"
+  }
+}

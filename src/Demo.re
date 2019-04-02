@@ -1,0 +1,1 @@
+Js.log("Hello, re-color-contrast!");
