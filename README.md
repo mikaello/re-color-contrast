@@ -1,5 +1,7 @@
 # re-color-contrast
 
+[![Build Status](https://travis-ci.org/mikaello/re-color-contrast.svg?branch=master)](https://travis-ci.org/mikaello/re-color-contrast)
+
 Calculate color contrast of two colors. The result is a number between 1.0 and 21.0, and can be used to determine if contrast fullfills [WCAG success criterion for color contrast](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).
 
 ## Getting started
