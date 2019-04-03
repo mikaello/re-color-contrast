@@ -22,3 +22,24 @@ let hexToRgb = hexString => {
   | _ => raise(InvalidInput("Invalid hex string: " ++ hexString))
   };
 };
+
+/** Get luminance from color, as defined in http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef
+ */
+let getRelativeLuminance = rgbColor => {
+  let convertToFraction = value => (value |> float_of_int) /. 255.;
+
+  let convertToLinearRgb = gammaCompressedRgb =>
+    if (gammaCompressedRgb < 0.03928) {
+      gammaCompressedRgb /. 12.92;
+    } else {
+      (gammaCompressedRgb +. 0.055) /. 1.055 ** 2.4;
+    };
+
+  let luminosityFunction = ((r, g, b)) =>
+    0.2126 *. r +. 0.7152 *. g +. 0.0722 *. b;
+
+  rgbColor
+  |> map3Tuple(convertToFraction)
+  |> map3Tuple(convertToLinearRgb)
+  |> luminosityFunction;
+};
