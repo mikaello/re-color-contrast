@@ -19,6 +19,7 @@ let hexToRgb = hexString => {
     let b = String.sub(hexString, 5, 2);
 
     (r, g, b) |> map3Tuple(toIntValue);
+
   | _ => raise(InvalidInput("Invalid hex string: " ++ hexString))
   };
 };

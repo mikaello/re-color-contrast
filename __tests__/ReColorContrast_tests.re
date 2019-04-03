@@ -13,6 +13,9 @@ describe("relative luminance", () => {
   test("grey", () =>
     expect(getRelativeLuminance("#777")) |> toBeSoCloseTo(0.1844, ~digits=3)
   );
+  test("blue", () =>
+    expect(getRelativeLuminance("#00f")) |> toBeSoCloseTo(0.0722, ~digits=3)
+  );
   test("blue-ish", () =>
     expect(getRelativeLuminance("#2D78DC"))
     |> toBeSoCloseTo(0.1915, ~digits=3)
