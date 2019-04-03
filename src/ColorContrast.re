@@ -32,7 +32,7 @@ let getRelativeLuminance = rgbColor => {
     if (gammaCompressedRgb < 0.03928) {
       gammaCompressedRgb /. 12.92;
     } else {
-      (gammaCompressedRgb +. 0.055) /. 1.055 ** 2.4;
+      ((gammaCompressedRgb +. 0.055) /. 1.055) ** 2.4;
     };
 
   let luminosityFunction = ((r, g, b)) =>
