@@ -25,7 +25,9 @@ let hexToRgb = hexString => {
 
 /** Get luminance from color, as defined in http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef
  */
-let getRelativeLuminance = rgbColor => {
+let getRelativeLuminance = hexColor => {
+  let rgbColor = hexColor |> hexToRgb;
+
   let convertToFraction = value => float_of_int(value) /. 255.;
 
   let convertToLinearRgb = gammaCompressedRgb =>
