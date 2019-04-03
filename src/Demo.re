@@ -43,3 +43,15 @@ let getRelativeLuminance = rgbColor => {
   |> map3Tuple(convertToLinearRgb)
   |> luminosityFunction;
 };
+
+/** Get contrast between two colors, as defined in http://www.w3.org/TR/2008/REC-WCAG20-20081211/#contrast-ratiodef
+*/
+let getContrast = (color1, color2) => {
+  let relativeLuminance1 = getRelativeLuminance(color1);
+  let relativeLuminance2 = getRelativeLuminance(color2);
+
+  let brightest = max(relativeLuminance1, relativeLuminance2);
+  let darkest = min(relativeLuminance1, relativeLuminance2);
+
+  (brightest +. 0.05) /. (darkest +. 0.05);
+};
