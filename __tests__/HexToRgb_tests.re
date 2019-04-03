@@ -1,7 +1,7 @@
 open Jest;
 open Expect;
 
-open Demo;
+open ColorContrast;
 
 describe("long hex to rgb", () => {
   test("converts black", () =>
