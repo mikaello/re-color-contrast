@@ -38,3 +38,11 @@ describe("short hex to rgb", () => {
     expect(hexToRgb("#00f")) |> toEqual((0, 0, 255))
   );
 });
+
+describe("invalid input to RGB", () =>
+  test("that it throws when inserting invalid input", () =>
+    expect(() =>
+      hexToRgb("tullball")
+    ) |> toThrow
+  )
+);
