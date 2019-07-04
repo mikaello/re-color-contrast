@@ -9,13 +9,13 @@
     "test": "jest"
   },
   "keywords": [
-    "BuckleScript"
+    "BuckleScript, contrast, wcag"
   ],
   "author": "mikaello",
-  "description": "Fast, small color manipulation and conversion",
-  "homepage": "https://github.com/mikaello/bs-tinycolor",
-  "repository": "https://github.com/mikaello/bs-tinycolor",
-  "bugs": "https://github.com/mikaello/bs-tinycolor/issues",
+  "description": "Calculate color contrast of two colors, by using WCAG standard calculation.",
+  "homepage": "https://github.com/mikaello/re-color-contrast",
+  "repository": "https://github.com/mikaello/re-color-contrast",
+  "bugs": "https://github.com/mikaello/re-color-contrast/issues",
   "license": "MIT",
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.8",
