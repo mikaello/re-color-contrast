@@ -7,7 +7,7 @@ Calculate color contrast of two colors. The result is a number between 1.0 and 2
 ## Getting started
 
 ```
-yarn add mikaello/re-color-contrast
+yarn add re-color-contrast
 ```
 
 Then add `re-color-contrast` as a dependency to `bsconfig.json`:
