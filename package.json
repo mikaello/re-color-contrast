@@ -2,14 +2,14 @@
   "name": "re-color-contrast",
   "version": "0.1.2",
   "scripts": {
-    "build": "bsb -make-world",
-    "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world",
-    "pretest": "yarn run build",
+    "build": "rescript build",
+    "start": "rescript build -w",
+    "clean": "rescript clean",
+    "pretest": "npm run build",
     "test": "jest"
   },
   "keywords": [
-    "BuckleScript, contrast, wcag"
+    "ReasonML, contrast, wcag"
   ],
   "author": "mikaello",
   "description": "Calculate color contrast of two colors, by using WCAG standard calculation.",
@@ -18,7 +18,7 @@
   "bugs": "https://github.com/mikaello/re-color-contrast/issues",
   "license": "MIT",
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.5.1",
-    "bs-platform": "8.1.1"
+    "@glennsl/bs-jest": "^0.7.0",
+    "rescript": "^9.1.4"
   }
 }
