@@ -26,12 +26,15 @@
     "res:format": "rescript format",
     "res:format:check": "rescript format --check",
     "build": "npm run res:build",
-    "test": "npm run build && vitest run",
+    "test": "npm run build && npx vitest run",
     "lint": "npm run res:format:check"
   },
   "devDependencies": {
     "rescript": "12.2.0",
     "rescript-vitest": "2.1.1",
-    "vitest": "3.2.4"
+    "vitest": "4.1.2"
+  },
+  "overrides": {
+    "vitest": "4.1.2"
   }
 }
