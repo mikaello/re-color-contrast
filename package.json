@@ -1,24 +1,37 @@
 {
   "name": "re-color-contrast",
-  "version": "0.1.2",
-  "scripts": {
-    "build": "rescript build",
-    "start": "rescript build -w",
-    "clean": "rescript clean",
-    "pretest": "npm run build",
-    "test": "jest"
+  "version": "1.0.0",
+  "description": "Calculate color contrast of two colors, by using WCAG standard calculation.",
+  "author": "mikaello",
+  "license": "MIT",
+  "homepage": "https://github.com/mikaello/re-color-contrast",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaello/re-color-contrast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikaello/re-color-contrast/issues"
   },
   "keywords": [
-    "ReasonML, contrast, wcag"
+    "rescript",
+    "contrast",
+    "wcag",
+    "color",
+    "accessibility"
   ],
-  "author": "mikaello",
-  "description": "Calculate color contrast of two colors, by using WCAG standard calculation.",
-  "homepage": "https://github.com/mikaello/re-color-contrast",
-  "repository": "https://github.com/mikaello/re-color-contrast",
-  "bugs": "https://github.com/mikaello/re-color-contrast/issues",
-  "license": "MIT",
+  "scripts": {
+    "res:build": "rescript",
+    "res:dev": "rescript -w",
+    "res:clean": "rescript clean",
+    "res:format": "rescript format",
+    "res:format:check": "rescript format --check",
+    "build": "npm run res:build",
+    "test": "npm run build && vitest run",
+    "lint": "npm run res:format:check"
+  },
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.7.0",
-    "rescript": "^9.1.4"
+    "rescript": "12.2.0",
+    "rescript-vitest": "2.1.1",
+    "vitest": "3.2.4"
   }
 }

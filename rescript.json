@@ -1,0 +1,20 @@
+{
+  "name": "re-color-contrast",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "__tests__",
+      "type": "dev"
+    }
+  ],
+  "package-specs": {
+    "module": "esmodule",
+    "in-source": true
+  },
+  "suffix": ".res.mjs",
+  "namespace": true,
+  "dev-dependencies": ["rescript-vitest"]
+}
