@@ -32,6 +32,6 @@
   "devDependencies": {
     "rescript": "12.2.0",
     "rescript-vitest": "2.1.1",
-    "vitest": "3.2.4"
+    "vitest": "4.1.4"
   }
 }
