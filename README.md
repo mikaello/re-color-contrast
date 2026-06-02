@@ -15,7 +15,7 @@ npm install re-color-contrast
 Then add `re-color-contrast` as a dependency to `rescript.json`:
 
 ```diff
-"bs-dependencies": [
+"dependencies": [
 +  "re-color-contrast"
 ]
 ```
