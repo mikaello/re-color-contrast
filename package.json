@@ -32,7 +32,7 @@
   "devDependencies": {
     "rescript": "12.3.0",
     "rescript-vitest": "2.1.1",
-    "vitest": "4.1.0"
+    "vitest": "4.1.8"
   },
   "overrides": {
     "rescript-vitest": {
