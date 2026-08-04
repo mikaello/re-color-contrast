@@ -33,10 +33,5 @@
     "rescript": "12.3.0",
     "rescript-vitest": "3.0.1",
     "vitest": "4.1.10"
-  },
-  "overrides": {
-    "rescript-vitest": {
-      "vitest": "$vitest"
-    }
   }
 }
