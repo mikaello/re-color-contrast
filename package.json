@@ -30,7 +30,7 @@
     "lint": "npm run res:format:check"
   },
   "devDependencies": {
-    "rescript": "12.3.0",
+    "rescript": "12.3.1",
     "rescript-vitest": "3.0.1",
     "vitest": "4.1.11"
   }
